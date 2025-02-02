@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/index.css">
+    <script src="style/INDEX.JS">
+
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <main>
+    <!-- ПРИМЕРЫ УРОКА
+    <div class='html'>
+        <p class='html-text'>Ответ: скоро тут будет ответ...</p>
+    </div> 
+
+    <div class='html'>
+        <p class='html-text'>Ответ: скоро будет ответ...</p>
+    </div>
+
+    <script>
+        const resultNine = document.querySelector('.html-text')
+
+const makeNine = () => {
+	const num1 = 4567
+	resultNine.innerText=num1%100
+};
+makeNine()
+    </script>
+
+    <script>
+        const resultTen = document.querySelector('.html-text')
+const makeTen = () => {
+	const str = 'Hello'
+    const result = str[2]
+    resultTen.innerText = result
+};
+makeTen()
+    </script>
+
+<ul class="cards">
+    <li class="card">Существующий элемент</li>
+</ul>
+<script>
+    var list = document.querySelector('.cards');
+var card = document.createElement('li');
+card.classList.add('card');
+list.appendChild(card);
+</script> -->
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<div class="form">
+<h2>Оставьте ваш комментарий</h2>
+
+<div>
+    <label for="user-email">Введите ваше <b>Имя</b></label>
+    <span id="user-email-hint" class="input-hint"></span>
+    <p id="output"></p>
+    </div>
+<input 
+id="user-name"
+aria-describedby="user-name-hint"
+name="name"
+type="name" />
+
+<div>
+<label for="user-email">Введите ссылку <b>вашего аватара</b></label>
+
+<span id="user-email-hint" class="input-hint"></span>
+</div>
+<div>
+<input
+id="user-email"
+aria-describedby="user-email-hint"
+name="email"
+type="email" />
+</div>
+<div>
+    <label for="user-com">Введите ваш комментарий</label>
+    
+    <span id="user-com-hint" class="input-hint"></span>
+    </div>
+    <div>
+    <input
+    id="user-com"
+    aria-describedby="user-com-hint"
+    name="text"
+    type="text" />
+    </div>
+    <button>Отправить</button>
+    </div>
+    <div class="chat"><h2>Чат</h2>
+    
+    <img src="style/image/гора.jpg" alt="аватар" class="avatar" >
+<hr>
+</div>
+    
+    </main>
+    <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сервис комментариев</title>
+    <style>
+        #avatar {
+            width: 100px; /* Ширина аватара */
+            height: 100px; /* Высота аватара */
+            border-radius: 50%; /* Круглая форма аватара */
+            display: none; /* Скрыть аватар по умолчанию */
+            margin-top: 10px; /* Отступ сверху */
+        }
+    </style>
+</head>
+<body>
+    <h1>Оставьте комментарий</h1>
+    
+    <input type="text" id="nameInput" placeholder="Введите ваше имя">
+    <br><br>
+    <input type="text" id="avatarInput" placeholder="Введите ссылку на аватар">
+    <br><br>
+    <button id="submitButton">Отправить</button>
+    
+    <p id="output"></p>
+    <img id="avatar" src="style/image/гора.jpg" alt="Аватар">
+    
+    <script>
+        function formatName(name) {
+            // Удаляем лишние пробелы и приводим к нижнему регистру
+            name = name.trim().toLowerCase();
+            // Преобразуем первую букву в верхний регистр
+            return name.charAt(0).toUpperCase() + name.slice(1);
+        }
+
+        document.getElementById('submitButton').addEventListener('click', function() {
+            const nameInput = document.getElementById('nameInput').value;
+            const avatarInput = document.getElementById('avatarInput').value;
+            
+            const formattedName = formatName(nameInput);
+            
+            document.getElementById('output').textContent = `Ваше имя: ${formattedName}`;
+            
+            // Устанавливаем ссылку на аватар и показываем его
+            const avatarImg = document.getElementById('avatar');
+            avatarImg.src = avatarInput;
+            avatarImg.style.display = avatarInput ? 'block' : 'none'; // Показываем аватар, если ссылка введена
+        });
+    </script>
+</body>
+</html>
+</body>
+</html>

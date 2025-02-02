@@ -1,0 +1,32 @@
+main{
+    display: flex;
+    height: auto;
+}
+#user-name,#user-email{
+    width: 300px;
+    height: 50px;
+    border: 2px dashed blueviolet;
+}
+#user-com{
+    width: 300px;
+    height: 100px;
+    border: 2px dashed blueviolet;
+}
+button{
+    background-color: blueviolet;
+    color:white ;
+}
+.form{
+    width: 600px;
+    background-color: aquamarine;
+}
+.avatar {
+    vertical-align: middle;
+    width: 60px;
+    height: 70px;
+    border-radius: 20%;
+}
+hr{
+    width: 400px;
+    border: 2px dashed blueviolet;
+}
